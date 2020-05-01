@@ -11,10 +11,10 @@ var roundScore = 0;
 // document.querySelector("#score-1").innerHTML = "<em>Hurry!<em>";
 
 //Програм эхлэхэд бэлтгэе
-document.getElementById("score-0").textContent = "0";
-document.getElementById("score-1").textContent = "0";
-document.getElementById("current-0").textContent = "0";
-document.getElementById("current-1").textContent = "0";
+document.getElementById("score-0").textContent = '0';
+document.getElementById("score-1").textContent = '0';
+document.getElementById("current-0").textContent = '0';
+document.getElementById("current-1").textContent = '0';
 var diceDom = document.querySelector(".dice");
 diceDom.style.display = "none";
 
@@ -37,7 +37,7 @@ document.querySelector(".btn-roll").addEventListener("click", function () {
   } else {
     // 1 буусан тул тоглогчийн ээлжийг солино.
     // Тухайн тоглогчийн ээлжиндээ цуглуулсан оноог 0 болгоно.
-
+  
     roundScore = 0;
     document.getElementById("current-" + activePlayer).textContent = "0";
     // Тоглогчдийн ээлжийг солино.
@@ -66,7 +66,7 @@ document.querySelector(".btn-hold").addEventListener("click", function () {
    scores[activePlayer];
 
   // Уг тоглогчийн хожсон эсэхийг (оноо 100 хүрсэн эсэхийг) шалгах
-  if (scores[activePlayer] >= 10){
+  if (scores[activePlayer] >= 100){
     document.getElementById("name-" + activePlayer).textContent = "WINNER !!!";
     document.querySelector("player-" + activePlayer + "-panel").classList.add("winners")
   } else{
@@ -90,3 +90,6 @@ function switchToNextPlayer(){
 }
 
 // Тоглоомыг шинээр эхлүүлэх товчны эвент листенер
+document.querySelector(".btn-new").addEventListener("click", function(){
+  alert("Working...");
+})
