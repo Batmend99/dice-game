@@ -105,7 +105,7 @@ document.querySelector(".btn-hold").addEventListener("click", function () {
         .classList.remove("active");
     } else {
       // Тоглогчийн ээлжийг солино.
-      // switchToNextPlayer();
+      switchToNextPlayer();
     }
   } else {
     alert("Тоглоом дууссан байна. NEW GAME товчийг дарж шинээр эхлэнэ үү");
